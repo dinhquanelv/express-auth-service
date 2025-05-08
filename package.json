@@ -1,0 +1,37 @@
+{
+  "name": "express-js-template",
+  "version": "1.0.0",
+  "description": "Express JS Template",
+  "keywords": [
+    "dinhquanelv",
+    "express",
+    "js",
+    "template"
+  ],
+  "homepage": "https://github.com/dinhquanelv/express-js-template#readme",
+  "bugs": {
+    "url": "https://github.com/dinhquanelv/express-js-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinhquanelv/express-js-template.git"
+  },
+  "license": "ISC",
+  "author": "dinhquanelv",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
+}
