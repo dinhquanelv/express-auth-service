@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
 
 const db = require('./src/config/db');
 const routes = require('./src/routes');
@@ -23,6 +24,7 @@ app.use(
 );
 app.use(express.json());
 app.use(morgan('dev'));
+app.use(cookieParser());
 
 app.head('/ping', (req, res) => {
   res.sendStatus(200);

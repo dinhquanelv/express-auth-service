@@ -1,5 +1,7 @@
 # Authentication service using Express.js
 
+A simple authentication service with JWT and Cookies using Express.js.
+
 ## Clone the repository
 
 ```bash
