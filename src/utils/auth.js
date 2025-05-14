@@ -60,13 +60,11 @@ const validateLogin = async (username, password) => {
 };
 
 const hashPassword = async (password) => {
-  const hashedPassword = await bcrypt.hash(password, 10);
-  return hashedPassword;
+  return await bcrypt.hash(password, 10);
 };
 
 const generateToken = (payload, jwtKey, time) => {
-  const token = jwt.sign(payload, jwtKey, { expiresIn: time });
-  return token;
+  return jwt.sign(payload, jwtKey, { expiresIn: time });
 };
 
 const verifyToken = (token, jwtKey) => {
