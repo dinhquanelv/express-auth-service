@@ -1,15 +1,10 @@
-# Express JS template
-
-- Building scalable REST APIs
-- Featuring centralized error handling
-- Organized folder structure following MVC (Model-View-Controller) pattern
-- Essential middleware like morgan, nodemon, dotenv and CORS
+# Authentication service using Express.js
 
 ## Clone the repository
 
 ```bash
 # clone the repository
-$ git clone https://github.com/dinhquanelv/express-js-template.git <your_project_name>
+$ git clone https://github.com/dinhquanelv/express-auth-service.git <your_project_name>
 ```
 
 ## Project setup

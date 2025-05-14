@@ -1,20 +1,20 @@
 {
-  "name": "express-js-template",
+  "name": "express-auth-service",
   "version": "1.0.0",
-  "description": "Express JS Template",
+  "description": "Authentication service using Express.js",
   "keywords": [
     "dinhquanelv",
     "express",
-    "js",
-    "template"
+    "auth",
+    "service"
   ],
-  "homepage": "https://github.com/dinhquanelv/express-js-template#readme",
+  "homepage": "https://github.com/dinhquanelv/express-auth-service#readme",
   "bugs": {
-    "url": "https://github.com/dinhquanelv/express-js-template/issues"
+    "url": "https://github.com/dinhquanelv/express-auth-service/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dinhquanelv/express-js-template.git"
+    "url": "git+https://github.com/dinhquanelv/express-auth-service.git"
   },
   "license": "ISC",
   "author": "dinhquanelv",
@@ -28,7 +28,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongoose": "^8.14.3"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
