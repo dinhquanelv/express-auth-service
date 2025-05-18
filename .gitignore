@@ -3,5 +3,3 @@
 
 #misc
 .env
-.env.dev
-.env.prod
