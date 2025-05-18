@@ -33,21 +33,21 @@ const authController = {
       const user = await validateLogin(username, password);
 
       if (user) {
-        const accessToken = generateToken({ id: user._id }, process.env.JWT_ACCESS_KEY, '1m');
-        const refreshToken = generateToken({ id: user._id }, process.env.JWT_REFRESH_KEY, '5m');
+        const accessToken = generateToken({ id: user._id }, process.env.JWT_ACCESS_KEY, '1h');
+        const refreshToken = generateToken({ id: user._id }, process.env.JWT_REFRESH_KEY, '30d');
 
         // store tokens in cookies
         res.cookie('accessToken', accessToken, {
           httpOnly: true,
           secure: toBoolean(process.env.COOKIES_SECURE),
           sameSite: process.env.COOKIES_SAME_SITE,
-          maxAge: 60 * 1000,
+          maxAge: 60 * 60 * 1000, // 1h
         });
         res.cookie('refreshToken', refreshToken, {
           httpOnly: true,
           secure: toBoolean(process.env.COOKIES_SECURE),
           sameSite: process.env.COOKIES_SAME_SITE,
-          maxAge: 5 * 60 * 1000,
+          maxAge: 30 * 24 * 60 * 60 * 1000, // 30d
         });
         const { password, ...others } = user._doc;
         return res.status(200).json({ ...others });
